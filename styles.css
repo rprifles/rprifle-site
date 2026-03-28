@@ -57,7 +57,7 @@ a { color: inherit; text-decoration: none; }
   border-radius: 28px;
   overflow: hidden;
   border: 1px solid rgba(192,138,74,.35);
-  background: rgba(85,58,38,.88);
+  background: rgba(106,71,40,.90);
   padding: 12px;
   box-shadow: 0 18px 40px rgba(0,0,0,.38);
 }
@@ -74,6 +74,7 @@ a { color: inherit; text-decoration: none; }
   width: 100%;
   height: 100%;
   object-fit: contain;
+  filter: brightness(1.18) contrast(1.12) saturate(1.08);
 }
 .brand-name { font-size: 32px; font-weight: 800; letter-spacing: .02em; }
 .brand-tag {
@@ -88,8 +89,8 @@ a { color: inherit; text-decoration: none; }
   margin-top: 8px;
   font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: .36em;
-  color: rgba(255,255,255,.75);
+  letter-spacing: .30em;
+  color: rgba(255,255,255,.80);
 }
 .main-nav { display: flex; gap: 22px; font-size: 14px; color: rgba(255,255,255,.76); }
 .main-nav a:hover { color: white; }
@@ -156,7 +157,17 @@ a { color: inherit; text-decoration: none; }
   max-width: 860px;
   text-shadow: 0 10px 34px rgba(192,138,74,.28);
 }
-.hero-text, .section-copy, .panel p, .service-card p, .gallery-card p, .featured-copy p, .faq-card p, .testimonial p, .stack-card p, .process-card p, .note-box { color: var(--soft); }
+.hero-text,
+.section-copy,
+.panel p,
+.service-card p,
+.gallery-card p,
+.featured-copy p,
+.faq-card p,
+.testimonial p,
+.stack-card p,
+.process-card p,
+.note-box { color: var(--soft); }
 .hero-text {
   margin-top: 24px;
   max-width: 760px;
@@ -445,7 +456,9 @@ a { color: inherit; text-decoration: none; }
 .gallery-main-card img { width: 100%; min-height: 420px; height: 100%; object-fit: cover; }
 .gallery-side-grid { display: grid; gap: 18px; }
 .gallery-card { overflow: hidden; }
-.gallery-card img { width: 100%; height: 210px; object-fit: cover; }
+.gallery-card img { width: 100%; height: 210px; }
+.gallery-card img.cover { object-fit: cover; }
+.gallery-card img.contain { object-fit: contain; background: var(--deep); padding: 12px; }
 .gallery-card > div, .featured-copy { padding: 24px; }
 
 .testimonial span {
