@@ -28,7 +28,6 @@ body {
 img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
 .container { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; }
-
 .site-header {
   position: sticky;
   top: 0;
@@ -94,7 +93,6 @@ a { color: inherit; text-decoration: none; }
 }
 .main-nav { display: flex; gap: 22px; font-size: 14px; color: rgba(255,255,255,.76); }
 .main-nav a:hover { color: white; }
-
 .button {
   display: inline-flex;
   align-items: center;
@@ -114,7 +112,6 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid rgba(192,138,74,.35);
   box-shadow: none;
 }
-
 .hero {
   position: relative;
   overflow: hidden;
@@ -194,7 +191,6 @@ a { color: inherit; text-decoration: none; }
   color: #fff2df;
   backdrop-filter: blur(6px);
 }
-
 .hero-side { display: grid; gap: 20px; align-self: end; }
 .brand-strip {
   display: grid;
@@ -216,7 +212,6 @@ a { color: inherit; text-decoration: none; }
   text-transform: uppercase;
   letter-spacing: .22em;
 }
-
 .stats-card, .image-card, .panel, .card, .service-card, .brand-panel, .stack-card, .gallery-card, .featured-card, .testimonial, .faq-card, .process-card, .info-grid > div {
   border: 1px solid var(--line);
 }
@@ -245,13 +240,11 @@ a { color: inherit; text-decoration: none; }
 }
 .stat-box strong { display: block; font-size: 28px; }
 .stat-box span { display: block; margin-top: 5px; color: var(--muted); font-size: 14px; }
-
 .hover-zoom { overflow: hidden; transition: transform .3s ease, box-shadow .3s ease; }
 .hover-zoom img { transition: transform .7s ease; }
 .hover-zoom:hover { transform: translateY(-6px); box-shadow: 0 24px 50px rgba(0,0,0,.28); }
 .hover-zoom:hover img { transform: scale(1.05); }
 .image-card img { width: 100%; height: 330px; object-fit: cover; }
-
 .info-strip {
   background: linear-gradient(180deg, rgba(70,47,30,.95), rgba(46,32,22,.95));
   border-bottom: 1px solid var(--line);
@@ -276,7 +269,6 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted-2);
 }
 .info-grid strong { font-size: 16px; }
-
 .section {
   padding: 82px 0 24px;
   position: relative;
@@ -327,7 +319,6 @@ a { color: inherit; text-decoration: none; }
   background: radial-gradient(circle at center, rgba(239,201,146,.12), transparent 55%);
   pointer-events: none;
 }
-
 .section-head {
   display: flex;
   align-items: end;
@@ -336,8 +327,6 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 30px;
 }
 .section-head.simple { margin-bottom: 18px; }
-.section-copy { max-width: 760px; color: var(--muted); }
-
 .two-col {
   display: grid;
   grid-template-columns: .95fr 1.05fr;
@@ -345,7 +334,6 @@ a { color: inherit; text-decoration: none; }
 }
 .panel { padding: 32px; }
 .right-panel { background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03)); }
-
 .cards-grid, .service-grid, .brand-grid, .featured-grid, .testimonial-grid, .faq-grid, .process-grid {
   display: grid;
   gap: 18px;
@@ -356,7 +344,6 @@ a { color: inherit; text-decoration: none; }
 .featured-grid, .testimonial-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
 .faq-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
 .process-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }
-
 .card, .service-card, .brand-panel, .stack-card, .gallery-card, .featured-card, .testimonial, .faq-card, .process-card {
   border-radius: 28px;
   box-shadow: 0 14px 34px rgba(0,0,0,.16);
@@ -372,7 +359,6 @@ a { color: inherit; text-decoration: none; }
   transition: transform .25s ease, border-color .25s ease;
 }
 .service-card:hover { transform: translateY(-4px); border-color: rgba(211,154,85,.60); }
-
 .badge, .pill {
   display: inline-flex;
   padding: 8px 12px;
@@ -386,7 +372,6 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: .22em;
 }
 .pill { margin-top: 16px; }
-
 .capability-band {
   border-radius: 32px;
   border: 1px solid var(--line);
@@ -410,7 +395,6 @@ a { color: inherit; text-decoration: none; }
   font-size: 14px;
   font-weight: 600;
 }
-
 .brand-panel h3 { margin-top: 0; }
 .brand-list {
   display: grid;
@@ -430,7 +414,6 @@ a { color: inherit; text-decoration: none; }
   font-size: 14px;
   padding: 10px;
 }
-
 .stack { display: grid; gap: 14px; margin-top: 18px; }
 .stack-card { padding: 20px; background: var(--deep); }
 .tall-image {
@@ -440,7 +423,6 @@ a { color: inherit; text-decoration: none; }
   border-radius: 28px;
   border: 1px solid var(--line);
 }
-
 .gallery-feature-grid {
   display: grid;
   grid-template-columns: 1.15fr .85fr;
@@ -460,13 +442,11 @@ a { color: inherit; text-decoration: none; }
 .gallery-card img.cover { object-fit: cover; }
 .gallery-card img.contain { object-fit: contain; background: var(--deep); padding: 12px; }
 .gallery-card > div, .featured-copy { padding: 24px; }
-
 .testimonial span {
   color: var(--accent-2);
   font-size: 42px;
   line-height: 1;
 }
-
 .request-grid {
   margin-top: 20px;
   display: grid;
@@ -493,7 +473,6 @@ a { color: inherit; text-decoration: none; }
   color: #e1bf98;
   font-size: 14px;
 }
-
 .simple-list { display: grid; gap: 10px; margin-top: 16px; }
 .note-box, .contact-grid div, .map-wrap {
   border-radius: 18px;
@@ -511,7 +490,6 @@ a { color: inherit; text-decoration: none; }
 .contact-grid strong { display: block; font-size: 18px; }
 .map-wrap { margin-top: 18px; overflow: hidden; }
 .map-wrap iframe { display: block; width: 100%; min-height: 320px; border: 0; }
-
 .site-footer {
   margin-top: 64px;
   border-top: 1px solid var(--line);
@@ -526,7 +504,6 @@ a { color: inherit; text-decoration: none; }
   font-size: 14px;
   color: #e1bf98;
 }
-
 @media (max-width: 1100px) {
   .hero-grid, .two-col, .capability-band, .gallery-feature-grid { grid-template-columns: 1fr; }
   .service-grid, .brand-grid, .featured-grid, .testimonial-grid, .process-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
