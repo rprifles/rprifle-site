@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" id="siteHeader">
     <div class="container header-inner">
       <a href="#top" class="brand">
         <div class="brand-logo-wrap">
+          <div class="brand-glow"></div>
           <img src="logo.png" alt="Ridgeline Precision Rifles logo" class="brand-logo" />
         </div>
         <div class="brand-copy">
@@ -101,7 +102,6 @@
         <h2>Built for customers who want real craftsmanship and direct communication.</h2>
         <p>Ridgeline Precision Rifles is presented here as a complete multi-section business site with a premium custom-shop feel. The layout is designed to help customers understand what you build, what services you provide, how the process works, how optics fit into the finished package, and how to get in touch.</p>
       </div>
-
       <div class="cards-grid">
         <div class="card warm-card"><small>Build Type</small><h3>Hunting Rifles</h3><p>Precision-focused work tailored to the purpose of the rifle and the goals of the shooter.</p></div>
         <div class="card warm-card"><small>Build Type</small><h3>Muzzleloaders</h3><p>Purpose-built work with clean fit and finish and dependable field-ready execution.</p></div>
@@ -117,13 +117,13 @@
         <div><p class="eyebrow">Services</p><h2>Core shop services</h2></div>
         <p class="section-copy">From full builds to component work and setup, the site now presents your services more like a premium, established custom rifle business.</p>
       </div>
-
       <div class="service-grid">
         <div class="service-card"><span class="badge">Optics</span><h3>Optics Mounting &amp; Setup</h3><p>Professional scope mounting, leveling, and optic setup using quality rings and bases to ensure reliable tracking and repeatable accuracy.</p></div>
         <div class="service-card"><span class="badge">Builds</span><h3>Custom Rifle Builder Services</h3><p>Purpose-built hunting rifles, muzzleloaders, and competition rifles for PRS, NRL, and ELR shooters.</p></div>
         <div class="service-card"><span class="badge">Barrel Work</span><h3>Rebarreling &amp; Chambering</h3><p>From replacing a shot-out barrel to chambering and threading a new one for your action and cartridge goals.</p></div>
         <div class="service-card"><span class="badge">Action Work</span><h3>Action Blueprinting</h3><p>Precision truing and blueprinting work for Remington-style actions to improve consistency and performance.</p></div>
         <div class="service-card"><span class="badge">Threading</span><h3>Muzzle Work</h3><p>Muzzle crowning and threading for accuracy-focused builds and clean, professional fitment.</p></div>
+        <div class="service-card"><span class="badge">Setup</span><h3>Trigger &amp; Optic Setup</h3><p>Trigger work or replacement, scope mounting, and rifle setup work for dependable field and range performance.</p></div>
         <div class="service-card"><span class="badge">Performance</span><h3>Load Development</h3><p>Load development for a wide range of cartridges to help your rifle perform at its best.</p></div>
       </div>
     </div>
@@ -210,12 +210,12 @@
     <div class="container">
       <div class="section-head">
         <div><p class="eyebrow">Featured Builds</p><h2>A showcase section built to feel like a serious custom rifle company</h2></div>
-        <p class="section-copy">This section gives the homepage a stronger builder-style identity by presenting individual rifles and shop work as highlighted featured projects.</p>
+        <p class="section-copy">This new section gives the homepage a stronger builder-style identity by presenting individual rifles and shop work as highlighted featured projects.</p>
       </div>
       <div class="featured-grid">
         <article class="featured-card hover-zoom"><img src="build1.png" alt="Long-Range Competition Build" /><div class="featured-copy"><small>PRS / NRL Style</small><h3>Long-Range Competition Build</h3><p>A clean, competition-focused rifle setup presented as a premium featured build with emphasis on balance, precision, and repeatable performance.</p><div class="pill">Ridgeline Featured Project</div></div></article>
         <article class="featured-card hover-zoom"><img src="build2.png" alt="Precision Hunting Rifle" /><div class="featured-copy"><small>Field Ready</small><h3>Precision Hunting Rifle</h3><p>A purpose-built rifle package designed to reflect practical field use, dependable accuracy, and clean custom-shop execution.</p><div class="pill">Ridgeline Featured Project</div></div></article>
-        <article class="featured-card hover-zoom"><img src="build3.png" alt="Custom Action and Barrel Package" /><div class="featured-copy"><small>Shop Detail</small><h3>Custom Action &amp; Barrel Package</h3><p>A tighter product-style presentation for customers who want to see the detail, fit, and finish that goes into a serious custom rifle project.</p><div class="pill">Ridgeline Featured Project</div></div></article>
+        <article class="featured-card hover-zoom"><img src="build3.png" alt="Custom Action &amp; Barrel Package" /><div class="featured-copy"><small>Shop Detail</small><h3>Custom Action &amp; Barrel Package</h3><p>A tighter product-style presentation for customers who want to see the detail, fit, and finish that goes into a serious custom rifle project.</p><div class="pill">Ridgeline Featured Project</div></div></article>
       </div>
     </div>
   </section>
@@ -247,22 +247,26 @@
         <h2>Start your rifle project</h2>
         <p>This form layout gives your website a true lead-capture section so customers can quickly share the basics of the rifle build or gunsmithing work they want.</p>
         <form class="request-grid">
-          <div><label>Name</label><input type="text" placeholder="Name" /></div>
-          <div><label>Phone Number</label><input type="text" placeholder="Phone Number" /></div>
-          <div><label>Email Address</label><input type="email" placeholder="Email Address" /></div>
-          <div><label>Project Type</label><input type="text" placeholder="Project Type" /></div>
-          <div><label>Rifle Platform / Action</label><input type="text" placeholder="Rifle Platform / Action" /></div>
-          <div><label>Cartridge</label><input type="text" placeholder="Cartridge" /></div>
-          <div><label>Preferred Use</label><input type="text" placeholder="Preferred Use" /></div>
+          <div><label>Name</label><input type="text" placeholder="Name"></div>
+          <div><label>Phone Number</label><input type="text" placeholder="Phone Number"></div>
+          <div><label>Email Address</label><input type="email" placeholder="Email Address"></div>
+          <div><label>Project Type</label><input type="text" placeholder="Project Type"></div>
+          <div><label>Rifle Platform / Action</label><input type="text" placeholder="Rifle Platform / Action"></div>
+          <div><label>Cartridge</label><input type="text" placeholder="Cartridge"></div>
+          <div><label>Preferred Use</label><input type="text" placeholder="Preferred Use"></div>
           <div class="full"><label>Notes About Your Build</label><textarea rows="5" placeholder="Enter notes about your build"></textarea></div>
           <div class="full form-row"><button type="button" class="button">Submit Project Request</button><span>Form can be connected later to email or website hosting.</span></div>
         </form>
       </div>
-
       <div class="panel right-panel">
         <p class="eyebrow">Project Types</p>
         <div class="simple-list">
-          <div>Hunting Rifles</div><div>Muzzleloaders</div><div>PRS Builds</div><div>NRL Builds</div><div>ELR Builds</div><div>Custom Shop Projects</div>
+          <div>Hunting Rifles</div>
+          <div>Muzzleloaders</div>
+          <div>PRS Builds</div>
+          <div>NRL Builds</div>
+          <div>ELR Builds</div>
+          <div>Custom Shop Projects</div>
         </div>
         <div class="note-box">Customers can use this section to request a custom rifle, optics setup, rebarrel, action work, or other precision gunsmithing service.</div>
       </div>
@@ -303,5 +307,15 @@
       <div>Custom rifle builder &amp; gunsmithing • Hunting and competition applications</div>
     </div>
   </footer>
+
+  <script>
+    const header = document.getElementById('siteHeader');
+    const onScroll = () => {
+      if (window.scrollY > 40) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    };
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+  </script>
 </body>
 </html>
